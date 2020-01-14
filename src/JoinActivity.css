@@ -1,0 +1,49 @@
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+.join-text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.username-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1570px;
+    text-align: center;
+}
+
+.user-card {
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: black;
+    font-size: 23px;
+    width: 15vw;
+    max-width: 250px;
+    word-wrap: break-word;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 16px;
+    padding: 16px;
+}
+
+.start-btn{
+    margin-top: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+    cursor: pointer;
+}
