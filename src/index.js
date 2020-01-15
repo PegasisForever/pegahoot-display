@@ -62,6 +62,7 @@ class App extends Component {
                 questionLeftSeconds={this.state.questionLeftSeconds}
                 questionText={this.state.questionText}
                 questionSentence={this.state.questionSentence}
+                answerTimes={this.state.answerTimes}
             />
         }
         return <div/>
