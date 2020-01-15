@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2dc8c9f-7983-449d-b4d5-dd77d3146cca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnswerActivity/AnswerActivity.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnswerActivity/AnswerActivity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameActivity/GameActivity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameActivity/GameActivity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameActivity/GameActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameActivity/GameActivity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,10 @@
       <workItem from="1578967331054" duration="9084000" />
       <workItem from="1579024361327" duration="2014000" />
       <workItem from="1579049137560" duration="8959000" />
-      <workItem from="1579065954784" duration="1376000" />
+      <workItem from="1579065954784" duration="3644000" />
+      <workItem from="1579094818742" duration="452000" />
+      <workItem from="1579105538792" duration="670000" />
+      <workItem from="1579107902285" duration="3799000" />
     </task>
     <task id="LOCAL-00001" summary="removed unused code">
       <created>1578909031013</created>
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579062456197</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="show answer times">
+      <created>1579067511612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579067511612</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,32 +155,33 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="add count down activity" />
     <MESSAGE value="add game activity, no rank" />
-    <option name="LAST_COMMIT_MESSAGE" value="add game activity, no rank" />
+    <MESSAGE value="show answer times" />
+    <option name="LAST_COMMIT_MESSAGE" value="show answer times" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="39" key="CommitChangelistDialog2" timestamp="1579062455849">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2198" y="183" key="CommitChangelistDialog2" timestamp="1579067511361">
+      <screen x="1920" y="0" width="2400" height="1350" />
     </state>
-    <state x="437" y="39" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579062455849" />
-    <state width="1860" height="256" key="GridCell.Tab.0.bottom" timestamp="1579067214457">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2198" y="183" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579067511361" />
+    <state width="1860" height="256" key="GridCell.Tab.0.bottom" timestamp="1579109439750">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579025987757" />
+    <state width="1860" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579109439750" />
     <state width="1860" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579067214457" />
-    <state width="1860" height="256" key="GridCell.Tab.0.center" timestamp="1579067214456">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="256" key="GridCell.Tab.0.center" timestamp="1579109439748">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579025987756" />
+    <state width="1860" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579109439748" />
     <state width="1860" height="256" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579067214456" />
-    <state width="1860" height="256" key="GridCell.Tab.0.left" timestamp="1579067214456">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="256" key="GridCell.Tab.0.left" timestamp="1579109439747">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579025987756" />
+    <state width="1860" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579109439747" />
     <state width="1860" height="256" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579067214456" />
-    <state width="1860" height="256" key="GridCell.Tab.0.right" timestamp="1579067214457">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="256" key="GridCell.Tab.0.right" timestamp="1579109439750">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579025987756" />
+    <state width="1860" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579109439750" />
     <state width="1860" height="256" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579067214457" />
     <state x="660" y="161" key="RollbackChangesDialog" timestamp="1578976850285">
       <screen x="0" y="0" width="1920" height="1080" />

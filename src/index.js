@@ -4,6 +4,7 @@ import {JoinActivity} from "./JoinActivity/JoinActivity"
 import {CountDownActivity} from "./CountDownActivity/CountDownActivity"
 import "./index.css"
 import {GameActivity} from "./GameActivity/GameActivity"
+import {AnswerActivity} from "./AnswerActivity/AnswerActivity"
 
 const wsUrl = "ws://localhost:8080/display"
 
@@ -12,7 +13,7 @@ class App extends Component {
         super(props)
         this.state = {
             activity: "JOIN",
-            userScoreMap: {}
+            userScores: []
         }
         this.socket = new WebSocket(wsUrl)
         let self = this
@@ -50,7 +51,7 @@ class App extends Component {
     render() {
         if (this.state.activity === "JOIN") {
             return <JoinActivity
-                users={Object.keys(this.state.userScoreMap)}
+                users={this.state.userScores.map((userScore) => userScore.name)}
                 startGame={this.startGame}/>
         } else if (this.state.activity === "COUNTDOWN") {
             return <CountDownActivity
@@ -63,6 +64,14 @@ class App extends Component {
                 questionText={this.state.questionText}
                 questionSentence={this.state.questionSentence}
                 answerTimes={this.state.answerTimes}
+            />
+        } else if (this.state.activity === "ANSWER") {
+            return <AnswerActivity
+                questionIndex={this.state.questionIndex}
+                questionText={this.state.questionText}
+                questionSentence={this.state.questionSentence}
+                questionAnswer={this.state.questionAnswer}
+                userScores={this.state.userScores}
             />
         }
         return <div/>
