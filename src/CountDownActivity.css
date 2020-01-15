@@ -1,0 +1,22 @@
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.question-index{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.countdown-time{
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}

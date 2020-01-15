@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import ReactDOM from "react-dom"
 import {JoinActivity} from "./JoinActivity"
+import {CountDownActivity} from "./CountDownActivity"
 import "./index.css"
 
 const wsUrl = "ws://localhost:8080/display"
@@ -41,12 +42,20 @@ class App extends Component {
     }
 
     startGame(){
-        console.log("start game")
+        this.socket.send(JSON.stringify({
+            "command":"start"
+        }))
     }
 
     render() {
         if (this.state.activity==="JOIN"){
-            return <JoinActivity users={this.state.users} startGame={this.startGame}/>
+            return <JoinActivity
+                users={this.state.users}
+                startGame={this.startGame}/>
+        }else if(this.state.activity==="COUNTDOWN"){
+            return <CountDownActivity
+                questionIndex={this.state.questionIndex}
+                countDownSeconds={this.state.countDownSeconds}/>
         }
         return <div/>
     }
