@@ -1,6 +1,6 @@
 import React from "react"
 import "./JoinActivity.css"
-import logo from "./pegahoot_logo.png"
+import logo from "../pegahoot_logo.png"
 
 export function JoinActivity(props) {
     return <div className={"full-page"}>

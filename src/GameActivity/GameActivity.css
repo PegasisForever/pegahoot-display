@@ -1,0 +1,31 @@
+.game-activity p{
+    position: fixed;
+    color: white;
+}
+
+.question-number{
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: 24px;
+}
+
+.question-left-seconds{
+    right: 0;
+    margin-top: 24px;
+    margin-right: 24px;
+    font-size: 32px;
+}
+
+.question-text{
+    top:100px;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+}
+
+.question-sentence{
+    top:170px;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}

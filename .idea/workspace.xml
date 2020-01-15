@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2dc8c9f-7983-449d-b4d5-dd77d3146cca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CountDownActivity.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountDownActivity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameActivity/GameActivity.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameActivity/GameActivity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountDownActivity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountDownActivity/CountDownActivity.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountDownActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountDownActivity/CountDownActivity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JoinActivity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/JoinActivity/JoinActivity.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JoinActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JoinActivity/JoinActivity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +49,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/joinActivity" />
+      <recent name="$PROJECT_DIR$/src/CountDownActivity" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,7 +100,7 @@
       <workItem from="1578909080990" duration="599000" />
       <workItem from="1578967331054" duration="9084000" />
       <workItem from="1579024361327" duration="2014000" />
-      <workItem from="1579049137560" duration="3400000" />
+      <workItem from="1579049137560" duration="7335000" />
     </task>
     <task id="LOCAL-00001" summary="removed unused code">
       <created>1578909031013</created>
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578985824095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add count down activity">
+      <created>1579056225942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579056225942</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,13 +140,14 @@
     <MESSAGE value="removed unused code" />
     <MESSAGE value="add join game screen" />
     <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="add count down activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="add count down activity" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="39" key="CommitChangelistDialog2" timestamp="1578985823974">
+    <state x="437" y="39" key="CommitChangelistDialog2" timestamp="1579056225711">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="437" y="39" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1578985823974" />
+    <state x="437" y="39" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.2400.1350@0.0.1920.1080" timestamp="1579056225711" />
     <state width="1860" height="256" key="GridCell.Tab.0.bottom" timestamp="1579051894572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

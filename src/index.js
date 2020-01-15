@@ -1,8 +1,9 @@
 import React, {Component} from "react"
 import ReactDOM from "react-dom"
-import {JoinActivity} from "./JoinActivity"
-import {CountDownActivity} from "./CountDownActivity"
+import {JoinActivity} from "./JoinActivity/JoinActivity"
+import {CountDownActivity} from "./CountDownActivity/CountDownActivity"
 import "./index.css"
+import {GameActivity} from "./GameActivity/GameActivity"
 
 const wsUrl = "ws://localhost:8080/display"
 
@@ -10,15 +11,14 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            "activity": "JOIN",
-            "users":[]
+            activity: "JOIN",
+            userScoreMap: {}
         }
         this.socket = new WebSocket(wsUrl)
         let self = this
 
         this.socket.onopen = function (event) {
             console.log("Socket connected")
-            // socket.send("My name is John");
         }
 
         this.socket.onmessage = function (event) {
@@ -41,21 +41,28 @@ class App extends Component {
         this.startGame = this.startGame.bind(this)
     }
 
-    startGame(){
+    startGame() {
         this.socket.send(JSON.stringify({
-            "command":"start"
+            command: "start"
         }))
     }
 
     render() {
-        if (this.state.activity==="JOIN"){
+        if (this.state.activity === "JOIN") {
             return <JoinActivity
-                users={this.state.users}
+                users={Object.keys(this.state.userScoreMap)}
                 startGame={this.startGame}/>
-        }else if(this.state.activity==="COUNTDOWN"){
+        } else if (this.state.activity === "COUNTDOWN") {
             return <CountDownActivity
                 questionIndex={this.state.questionIndex}
                 countDownSeconds={this.state.countDownSeconds}/>
+        } else if (this.state.activity === "GAME") {
+            return <GameActivity
+                questionIndex={this.state.questionIndex}
+                questionLeftSeconds={this.state.questionLeftSeconds}
+                questionText={this.state.questionText}
+                questionSentence={this.state.questionSentence}
+            />
         }
         return <div/>
     }
