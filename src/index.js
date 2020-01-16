@@ -5,6 +5,7 @@ import {CountDownActivity} from "./CountDownActivity/CountDownActivity"
 import "./index.css"
 import {GameActivity} from "./GameActivity/GameActivity"
 import {AnswerActivity} from "./AnswerActivity/AnswerActivity"
+import {FinalActivity} from "./FinalActivity/FinalActivity"
 
 const wsUrl = "ws://localhost:8080/display"
 
@@ -71,6 +72,10 @@ class App extends Component {
                 questionText={this.state.questionText}
                 questionSentence={this.state.questionSentence}
                 questionAnswer={this.state.questionAnswer}
+                userScores={this.state.userScores}
+            />
+        } else if (this.state.activity === "FINAL") {
+            return <FinalActivity
                 userScores={this.state.userScores}
             />
         }

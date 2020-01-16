@@ -1,0 +1,66 @@
+.final-logo{
+    position: fixed;
+    left: 24px;
+    top: 24px;
+    width: 150px;
+}
+
+.top3-chart {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 32px;
+    text-align: center;
+    color: white;
+}
+
+.chart-column {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30%;
+}
+
+.column-bar {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 16px;
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.column-name {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.column-score {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.finalscore-list {
+    position: fixed;
+    top: 640px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.finalscore-item {
+    color: white;
+    font-size: 26px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
