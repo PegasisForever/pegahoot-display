@@ -7,7 +7,12 @@ import {GameActivity} from "./GameActivity/GameActivity"
 import {AnswerActivity} from "./AnswerActivity/AnswerActivity"
 import {FinalActivity} from "./FinalActivity/FinalActivity"
 
-const wsUrl = "ws://localhost:8080/display"
+let wsUrl
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    wsUrl = "ws://localhost:5008/display"
+} else {
+    wsUrl = "wss://hoot.pegasis.site/ws/display"
+}
 
 class App extends Component {
     constructor(props) {
